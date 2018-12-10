@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<flights>
+<flight><departingid>e.g. 00/00/0000</departingid><returningid>e.g. 00/00/0000</returningid><airline>AL_2999</airline><passengers>one</passengers></flight><flight><departingid>e.g. 00/00/0000</departingid><returningid>e.g. 00/00/0000</returningid><airline>AL_2999</airline><passengers>one</passengers></flight></flights>

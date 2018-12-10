@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- HTML5 doctype -->
+
+<html lang="en">
+
+<!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own now. -->
+
+<head>
+	<link rel="shortcut icon" href="images/logo.png">
+	<meta charset="utf-8"><!-- HTML5 charset -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Getaway | Amsterdam</title>
+
+	<link href="css/layout.css" rel="stylesheet" type="text/css"/>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--[if lte IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<script>
+		function c_function(){
+			var x;
+
+			if (confirm("If you wish to confirm your booking press : Ok \n\nIf you wish to cancel your booking press : Cancel") == true){
+				x = "Booking Confirmed";
+			}//end if
+
+			else {
+				x = "Booking Cancelled";
+			}//end else
+
+			document.getElementById("demo1").innerHTML = x;
+
+			}//end function
+	</script>
+
+	<script>
+		function d_function(){
+			var x;
+
+			if (confirm("If you wish to confirm your booking press : Ok \n\nIf you wish to cancel your booking press : Cancel") == true){
+				x = "Booking Confirmed";
+			}//end if
+
+			else {
+				x = "Booking Cancelled";
+			}//end else
+
+			document.getElementById("demo2").innerHTML = x;
+
+			}//end function
+	</script>
+
+</head>
+
+	<body>
+
+		<div id="pagewrap">
+
+			<div id="header">
+				<div id="logo-container">
+					<img src="images/logo.png" alt="header"/>
+					<h1 style="display:none;">Getaway</h1>
+				</div>
+
+			</div>
+
+			<div id="nav">
+				<ul id="navul">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="city-breaks.html">City Breaks</a></li>
+					<li><a href="flights.html">Flights</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="Maps.html">Maps</a></li>
+				</ul>
+
+			</div>
+			<div id="content">
+				<div id="formresponsive1"><a href="#City-Breaks"></a><p><span class="mw-headline" id="City-Breaks"><img src="images/cityheaders/amsterdam-city-breaks.jpg" alt="header"/></span></p></div>
+				<p>&nbsp;</p>
+				<form method="post" action="php/bookingProcessor.php">
+
+    <div class="form-group">
+    <label for="departingid">Departing </label>
+    <input type = "text" id = "departingid" name="departingid" value = "14/12/2016" disabled/><br/>
+    </div>
+
+    <div class="form-group">
+    <label for="returning-id">Returning </label>
+    <input type = "text" id = "returningid" name = "returningid" value = "16/12/2016" disabled/><br/>
+    </div>
+
+    <div class="form-group">
+    <label for="duration-id">Duration </label>
+    <input type = "text" id = "durationid" name = "durationid" value = "3 Days" disabled/><br/>
+    </div>
+
+    <div class="form-group">
+      <label for="hotel">Hotel </label>
+      <select class="custom-select" id="hotel" name="hotel">
+          <option value = "Grand hotel">Grand Hotel Amrath: €119 pp</option>
+          <option value = "Renaissance">Renaissance Amsterdam Hotel: €228 pp</option>
+	        <option value = "novotel">Novotel Amsterdam City: €178 pp</option>
+      </select>
+     </div>
+
+
+    <div class="form-group">
+      <label for="rooms">Rooms </label>
+      <select class="custom-select" id="rooms" name="rooms">
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+
+      </select>
+     </div>
+
+		<div class="form-group">
+      <label for="beds">Beds </label>
+      <select class="custom-select" id="beds" name="beds">
+          <option value = "one">1</option>
+          <option value = "two">2</option>
+
+      </select>
+     </div>
+
+     <div class="form-group">
+      <label for="airline">Airline </label>
+        <select class="custom-select" id="airline" name="airline">
+          <option value="AL_2999">Aer Lingus: €29.99 pp</option>
+          <option value="R_1999">Ryanair: €19.99 pp</option>
+      </select>
+      </div>
+
+
+    <div class="form-group">
+      <label for="passengers">Passengers </label>
+      <select class="custom-select" id="passengers" name="passengers">
+          <option value = "one">1</option>
+          <option value = "two">2</option>
+	        <option value = "three">3</option>
+          <option value = "four">4</option>
+      </select>
+     </div>
+    <label for="button4"></br> </label>
+    <input id="submit" name="submit" type="submit" value="Process Booking" class="btn btn-primary">
+</form>
+
+
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+
+				<div id="formresponsive2"><a href="#flights"></a><p><span class="mw-headline" id="flights"><img src="images/cityheaders/amsterdam-flights.jpg" alt="header"/></span></p></div>
+				<p>&nbsp;</p>
+				<form method="post" action="php/flightProcessor.php">
+
+    <div class="form-group">
+    <label for="departingid">Departing </label>
+    <input type = "text" id = "departingid" name="departingid" value = "e.g. 00/00/0000"/><br/>
+    </div>
+
+    <div class="form-group">
+    <label for="returning-id">Returning </label>
+    <input type = "text" id = "returningid" name = "returningid" value = "e.g. 00/00/0000"/><br/>
+    </div>
+
+
+     <div class="form-group">
+      <label for="airline">Airline </label>
+        <select class="custom-select" id="airline" name="airline">
+          <option value="AL_2999">Aer Lingus: €29.99 pp</option>
+          <option value="R_1999">Ryanair: €19.99 pp</option>
+      </select>
+      </div>
+
+
+    <div class="form-group">
+      <label for="passengers">Passengers </label>
+      <select class="custom-select" id="passengers" name="passengers">
+          <option value = "one">1</option>
+          <option value = "two">2</option>
+
+      </select>
+     </div>
+    <label for="button3"></br> </label>
+    <input id="submit" name="submit" type="submit" value="Process Booking" class="btn btn-primary">
+</form>
+
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+			</div>
+
+
+			<div id="footer">
+				<div id="logo-container1">
+					<h1 style="display:none;">Getaway</h1></div>
+					<p>&copy; 2018 Getaway. All rights reserved.</p>
+			</div>
+
+		</div>
+
+	</body>
+</html>

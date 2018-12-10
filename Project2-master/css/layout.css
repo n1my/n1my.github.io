@@ -1,0 +1,329 @@
+
+body {
+    font: 1em Arial,Helvetica,sans-serif;
+    background-color:#82E0AA  ;
+}
+
+body p {
+    color: #FFF;
+}
+
+a {
+    color: #669;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font: bold 36px/100% Arial,Helvetica,sans-serif;
+}
+
+/**** STRUCTURE ****/
+#pagewrap {
+    padding: 5px;
+    width: 960px;
+    margin: 20px auto;
+}
+
+#nav {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color:#82E0AA   ;
+}
+
+#navul {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color:#82E0AA  ;
+}
+
+#nav li {
+    float: left;
+}
+
+#navul li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    font-family: Myriad,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #FFF;
+}
+
+#navul li a {
+    display: block;
+    text-decoration: none;
+    font-family: Myriad,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #FFF;
+}
+
+#nav li a:hover {
+    color: #000;
+}
+
+#navul li a:hover {
+    color: #000;
+}
+
+/* for 481px or more */
+@media screen and (min-width: 481px) {
+#nav li {
+    width: 20%;
+}
+
+#navul li {
+    width: 20%;
+}
+
+#nav li a {
+    text-align: center;
+    padding: 8px;
+}
+
+#navul li a {
+    text-align: center;
+    padding: 8px;
+}
+}
+
+/* for 480p or less */
+@media screen and (max-width: 480px) {
+#nav {
+    margin-bottom: 10px;
+}
+
+#navul {
+    margin-bottom: 10px;
+}
+
+#nav li {
+    width: 100%;
+}
+
+#navul li {
+    width: 100%;
+}
+
+#nav li a {
+    padding: 8px;
+}
+
+#navul li a {
+    padding: 8px;
+}
+}
+
+#logo-container img {
+    width: 25%;
+    height: auto;
+}
+
+#bannerresponsive img {
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    width: 80%;
+    float: left;
+}
+
+#contentresponsive img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#contentresponsive1 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#contentresponsive2 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#contentresponsive3 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#contentresponsive4 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#contentresponsive5 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#flightsresponsive img {
+    width: 50%;
+    height: auto;
+	float: left;
+}
+
+#flightsresponsive1 img {
+    width: 50%;
+    height: auto;
+	float: left;
+}
+
+#flightsresponsive2 img {
+    width: 50%;
+    height: auto;
+	float: left;
+}
+
+#flightsresponsive3 img {
+    width: 50%;
+    height: auto;
+	float: left;
+}
+
+#flightsresponsive4 img {
+    width: 50%;
+    height: auto;
+	float: left;
+}
+
+#flightsresponsive5 img {
+    width: 50%;
+    height: auto;
+	float: left;
+}
+
+#formresponsive1 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#formresponsive2 img {
+    width: 100%;
+    height: auto;
+	float: left;
+}
+
+#sidebar {
+    width: 19%;
+    float: right;
+}
+
+#logo-container1 img {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    clear: both;
+    font-size: small;
+}
+
+/**** border & guidelines ****/
+#content {
+    background:#82E0AA   ;
+}
+
+#sidebar {
+    background: #82E0AA  ;
+}
+
+#header,#content,#sidebar {
+    margin-bottom: 5px;
+}
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+#pagewrap {
+    width: 94%;
+}
+
+#content {
+    width: 65%;
+}
+
+#sidebar {
+    width: 30%;
+}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+#content {
+    width: auto;
+    float: none;
+}
+
+#sidebar {
+    width: auto;
+    float: none;
+}
+}
+
+/* for 480p or less */
+@media screen and (max-width: 480px) {
+#header {
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#sidebar {
+    display: none;
+}
+}
+
+/* forms */
+
+label{
+	float: left;
+	width: 120px;
+}
+	
+select, input, textarea{
+	width: 180px;
+	margin-bottom: 5px;
+}
+			
+textarea{
+	width: 250px;
+	height: 150px;
+}
+	
+.radios{
+	width: 1em;
+}	
+#map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+#mapTitle{
+	text-align:center;
+}

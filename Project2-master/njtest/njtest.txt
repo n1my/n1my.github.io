@@ -1,0 +1,2 @@
+cd njtest
+node server.js

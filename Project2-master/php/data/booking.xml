@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<bookings>
+<booking><departingid/><returningid/><durationid/><hotel>ibis</hotel><rooms>1</rooms><beds>one</beds><airline>AL_2999</airline><passengers>one</passengers></booking><booking><departingid/><returningid/><durationid/><hotel>ibis</hotel><rooms>1</rooms><beds>one</beds><airline>AL_2999</airline><passengers>one</passengers></booking><booking><departingid/><returningid/><durationid/><hotel>ibis</hotel><rooms>1</rooms><beds>one</beds><airline>AL_2999</airline><passengers>one</passengers></booking></bookings>
